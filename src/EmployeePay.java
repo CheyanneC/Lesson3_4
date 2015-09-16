@@ -1,6 +1,6 @@
 import hsa.*;
 
-public class EmployeePay 
+public class EmployeePay //change ending design
 {
     public static void main(String[] args) 
     {
