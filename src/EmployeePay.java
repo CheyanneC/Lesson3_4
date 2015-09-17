@@ -25,10 +25,10 @@ public class EmployeePay //change ending design
         
         for(int x = 0; x <= 4; x ++)
         {
-            if(eh[x] >= 44) //if they have worked enough to recieve over time (44 hours)
+            if(eh[x] >= 40) //if they have worked enough to recieve over time (44 hours)
             {
-                reg = 43 * 15; //they automatically get their regular pay to be 43 hours by $15
-                over = (eh[x] - 43) * 22.5; //calculate how much of their time is considered overtime
+                reg = 39 * 15; //they automatically get their regular pay to be 43 hours by $15
+                over = (eh[x] - 39) * 22.5; //calculate how much of their time is considered overtime
                 //then multiply by 22.5 (time and a half)
                 total = reg + over; //total pay is regular and overtime
                 
