@@ -1,4 +1,4 @@
-
+import hsa.*;
 
 public class PowerCharts 
 {
