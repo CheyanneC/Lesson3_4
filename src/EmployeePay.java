@@ -19,7 +19,7 @@ public class EmployeePay //change ending design
             }
         }
         
-        c.print("\n");
+        c.print("\nEmployee's Pay:\n");
         
         double reg, over, total;
         
