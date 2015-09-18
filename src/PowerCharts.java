@@ -17,15 +17,19 @@ public class PowerCharts
             if(exp >= 0 && exp <= 10) break;
         }
         
+        c.print("\n");
         c.print(Format.justify('c', "X", 5));
-        c.print(Format.justify('c', "2^X\n", 10));
+        c.println(Format.justify('c', "2^X", 10));
+        c.print(Format.justify('c', "---", 5));
+        c.println(Format.justify('c', "----", 10));
+        
         
         int ans = 0;
         
         for(int x = 0; x <= exp; x ++)
         {
             c.print(Format.justify('c', x , 5));
-            c.print(Format.justify('c', raiseIntPower(x), 10));
+            c.println(Format.justify('c', raiseIntPower(x), 10));
         }        
     }
     
@@ -33,13 +37,13 @@ public class PowerCharts
     {
         int total = 0;
         
-        for(int n = 0; n <= 10; n++)
+        for(int n = 0; n <= exp; n++)
         {
-            total = Math.pow(x, exp);
+            total = (int) Math.pow(exp, x);
         } 
 
         return total; 
     
     }
 }
-}
+
